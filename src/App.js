@@ -227,8 +227,7 @@ const Portfolio = () => {
                             </div>
 
                             <p className="text-slate-400 mb-4 leading-relaxed">
-                                Bertanggung jawab dalam pengembangan sistem backend dan integrasi aplikasi. Fokus pada
-                                efisiensi kode dan skalabilitas sistem menggunakan arsitektur modern.
+                                Responsible for backend system development and application integration. Focus on code efficiency and system scalability using modern architecture.
                             </p>
 
                             <ul className="space-y-2 mb-6">
