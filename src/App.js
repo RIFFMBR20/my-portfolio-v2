@@ -1,7 +1,5 @@
 import React from 'react';
 import {
-    Github,
-    Linkedin,
     Mail,
     ExternalLink,
     Code,
@@ -13,6 +11,8 @@ import {
     Download,
     Award
 } from 'lucide-react';
+
+import { SiGithub, SiLinkedin, SiTensorflow } from 'react-icons/si';
 
 const Portfolio = () => {
     const projects = [
@@ -94,16 +94,23 @@ const Portfolio = () => {
                         <div className="flex gap-4">
                             <a href="https://github.com/RIFFMBR20"
                                target="_blank"
-                               className="p-3 bg-slate-800/50 border border-slate-700 rounded-xl hover:border-blue-400 hover:text-blue-400 transition-all"><Github
-                                size={24}/></a>
+                               rel="noopener noreferrer"
+                               className="p-3 bg-slate-800/50 border border-slate-700 rounded-xl hover:border-blue-400 hover:text-blue-400 transition-all">
+                                <SiGithub size={24} />
+                            </a>
+
                             <a href="https://www.linkedin.com/in/ariffulfikri/"
                                target="_blank"
-                               className="p-3 bg-slate-800/50 border border-slate-700 rounded-xl hover:border-blue-400 hover:text-blue-400 transition-all"><Linkedin
-                                size={24}/></a>
+                               rel="noopener noreferrer"
+                               className="p-3 bg-slate-800/50 border border-slate-700 rounded-xl hover:border-blue-400 hover:text-blue-400 transition-all">
+                                <SiLinkedin size={24} />
+                            </a>
                             <a href="mailto:ariffulfikri.af@gmail.com"
                                target="_blank"
+                               rel="noopener noreferrer"
                                className="p-3 bg-slate-800/50 border border-slate-700 rounded-xl hover:border-blue-400 hover:text-blue-400 transition-all"><Mail
-                                size={24}/></a>
+                                size={24}/>
+                            </a>
                         </div>
                     </div>
                 </header>
@@ -383,6 +390,7 @@ const Portfolio = () => {
                                 </div>
                                 <a href={project.link}
                                    target="_blank"
+                                   rel="noopener noreferrer"
                                    className="inline-flex items-center gap-2 text-white font-bold hover:text-blue-400 transition-colors uppercase tracking-widest text-sm">
                                     View Detail <ExternalLink size={16}/>
                                 </a>
@@ -409,7 +417,7 @@ const Portfolio = () => {
                                 title: "TensorFlow Developer Certificate",
                                 issuer: "Tensorflow",
                                 date: "2023",
-                                icon: <Database size={24}/>,
+                                icon: <SiTensorflow size={24}/>,
                                 url: "https://www.credential.net/c5377178-7d8a-47a1-94d9-73aef70ccc04#gs.7geeg7"
                             },
                             {
