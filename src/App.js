@@ -168,7 +168,7 @@ const Portfolio = () => {
                                     <h3 className="text-sm font-bold text-white uppercase tracking-widest">Backend</h3>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
-                                    {["MySQL", "Redis", "PostgresSql"].map((skill) => (
+                                    {["MySQL", "Redis", "PostgresSql", "Kafka", "Oracle"].map((skill) => (
                                         <span key={skill}
                                               className="px-3 py-1 bg-slate-800/40 border border-slate-700/50 rounded-lg text-[11px] font-medium text-slate-400 hover:text-emerald-400 transition-all cursor-default">
                                           {skill}
@@ -187,7 +187,7 @@ const Portfolio = () => {
                                         Tools</h3>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
-                                    {["Git", "Docker"].map((skill) => (
+                                    {["Git", "Docker", "Gitlab", "Bitbucket"].map((skill) => (
                                         <span key={skill}
                                               className="px-3 py-1 bg-slate-800/40 border border-slate-700/50 rounded-lg text-[11px] font-medium text-slate-400 hover:text-orange-400 transition-all cursor-default">
                                       {skill}
@@ -207,6 +207,54 @@ const Portfolio = () => {
                     </h2>
 
                     <div className="space-y-12">
+                        {/* Experience 2 */}
+                        <div
+                            className="relative pl-8 border-l-2 border-slate-800 hover:border-blue-500 transition-colors group">
+                            {/* Dot Indicator */}
+                            <div
+                                className="absolute w-4 h-4 bg-slate-900 border-2 border-slate-700 group-hover:border-blue-400 rounded-full -left-[9px] top-1 transition-colors"></div>
+
+                            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                                <div>
+                                    <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">Java Developer</h3>
+                                    <p className="text-blue-400 font-medium">PT Jalin Pembayaran Nusantara</p>
+                                </div>
+                                <span
+                                    className="text-sm font-mono text-slate-500 bg-slate-900 px-3 py-1 rounded-full border border-slate-800 mt-2 md:mt-0">
+                                  Feb 2026 - Now
+                                </span>
+                            </div>
+
+                            <p className="text-slate-400 mb-4 leading-relaxed">
+                                Responsible for Java and Golang development, as well as Flutter-based web application development, with a strong focus on building efficient and scalable code capable of processing large volumes of data with high performance.
+                            </p>
+
+                            <ul className="space-y-2 mb-6">
+                                <li className="flex items-start gap-2 text-sm text-slate-400">
+                                    <span className="text-blue-500 mt-1">▹</span>
+                                    Developed backend services in Golang from scratch, including Kafka consumers and TXT file processing to
+                                    update databases for reporting purposes.
+                                </li>
+                                <li className="flex items-start gap-2 text-sm text-slate-400">
+                                    <span className="text-blue-500 mt-1">▹</span>
+                                    Built a Flutter-based web application from scratch, implementing Provider as the state management architecture
+                                </li>
+                                <li className="flex items-start gap-2 text-sm text-slate-400">
+                                    <span className="text-blue-500 mt-1">▹</span>
+                                    Handled QA defect fixes by performing debugging, log analysis, and internal testing for applications in the
+                                    testing phase
+                                </li>
+                            </ul>
+
+                            <div className="flex flex-wrap gap-2">
+                                {["Golang", "Java", "Oracle", "Flutter"].map((tech) => (
+                                    <span key={tech}
+                                          className="text-[10px] font-bold px-2 py-1 bg-slate-800/50 text-slate-400 rounded uppercase tracking-tighter">
+                                    {tech}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
                         {/* Experience 1 */}
                         <div
                             className="relative pl-8 border-l-2 border-slate-800 hover:border-blue-500 transition-colors group">
