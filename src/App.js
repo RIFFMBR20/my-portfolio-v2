@@ -216,7 +216,7 @@ const Portfolio = () => {
 
                             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                                 <div>
-                                    <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">Java Developer</h3>
+                                    <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">Backend Developer</h3>
                                     <p className="text-blue-400 font-medium">PT Jalin Pembayaran Nusantara</p>
                                 </div>
                                 <span
